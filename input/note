@@ -1,0 +1,12 @@
+---并行度----
+代码里优先级最高
+集群配置文件可以设置 --提交时可以设置 ---env.setParallelism ---flatmap.setParallelism
+
+---数据传输---
+one-to-one ：Map filter flatMap
+Redistributing：keyBy
+
+--合并---
+并行度相同 算子one-to-one
+
+执行图
